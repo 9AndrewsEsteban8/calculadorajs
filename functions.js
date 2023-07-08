@@ -1,8 +1,12 @@
-// Obtener el elemento h1 por su clase
-var tituloCalculadora = document.querySelector('.calculadora_tittle');
+ // Obtener el botón por su clase
+var botonCalculadora = document.querySelector('.calculadora_button');
 
-// Agregar un evento al hacer clic en el título
-tituloCalculadora.addEventListener('click', function() {
-  // Tu código de manejo de evento aquí
-console.log('Se hizo clic en el título de la calculadora');
-});
+ // Función para cambiar el color de fondo
+function cambiarColorFondo(color) {
+  document.body.style.backgroundColor = color;
+}
+
+ // Evento cuando se hace clic en el botón
+botonCalculadora.addEventListener('click', function() {
+  cambiarColorFondo('#ff0000'); // Cambiar a color rojo al hacer clic en el botón
+})
