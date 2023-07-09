@@ -1,16 +1,30 @@
 body{
-    background-color: blueviolet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
+  margin: 5%;
 }
 
-
-.calculadora_tittle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+.calculadora{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.bottones{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 5vh;
+  
+}
+
+.calculadora button{
+  display: flex;
+  width: 100%;
+  height: 200%;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora input{
+  width: 100%; /* Ancho deseado */
+  height: 5vh; /* Alto deseado */
+} 
+
