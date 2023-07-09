@@ -7,8 +7,14 @@
 <link rel="icon" href="src/Calculadora.png">
 </head>
 <body onload="init();">
-  <div class="calculadora">
+  <header>
     <h1>CALCULADORA</h1>
+    <div class="wrap-toggle">
+      <input type="checkbox" id="toggle" class="offscreen">
+      <label for="toggle" class="switch"></label>
+    </div>
+  </header>
+  <div class="calculadora">
     <input type="text" id="result" placeholder="Calculadora" readonly>
     <div class="contenedor_botones">
       <button id="button1">1</button>
