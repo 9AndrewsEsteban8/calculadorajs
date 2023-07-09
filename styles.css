@@ -10,16 +10,17 @@ body::-webkit-scrollbar-thumb{
 
 
 body {
+  background: url(src/Imagen\ dia.jpg) no-repeat center;
+  background-size:cover;
+  min-height: 100vh;
   font-family: 'Red Hat Display', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
   margin: 5%;
-  background-image: url(src/Imagen\ dia.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 header{
@@ -31,7 +32,7 @@ header{
 .switch{
   position: relative;
   display: inline-block;
-  width: 80px;
+  width: 90px;
   height: 40px;
   background-color: rgba(0, 106, 255, 0.884);
   border-radius: 40px;
@@ -81,6 +82,11 @@ input[type='checkbox']:checked + .switch{
   gap: 8vh;
 }
 
+.contenedor_botones button:last-child {
+  grid-column: span 4;
+}
+
+
 .calculadora button{
   background-color: rgba(0, 106, 255, 0.884);
   color: white;
@@ -93,6 +99,11 @@ input[type='checkbox']:checked + .switch{
   align-items: center;
   opacity: 70%;
   cursor: pointer;
+}
+
+.calculadora button:hover{
+  background-color: white;
+  color: rgba(0, 106, 255, 0.884);;
 }
 
 .calculadora input{
@@ -110,6 +121,15 @@ h1{
   color:rgba(0, 106, 255, 0.884);
   font-weight:bold ;
   font-size: 8vh;
+}
+
+.wrap-toggle{
+  font-size: larger;
+  font-weight: bold;
+  color:rgba(0, 106, 255, 0.884);
+  display: flex;
+  gap: 2%;
+  align-items: center;
 }
 
 
