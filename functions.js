@@ -12,7 +12,17 @@ botonNumeros.forEach(function(boton){
 
 botonOpera.forEach(function(boton){
   boton.addEventListener('click',function(){
-    // selectOperaicon(buton.innerText);
-    alert(boton.innerText);
+    selectOperaicon(buton.innerText);
   })
+});
+
+
+bontonIgual.addEventListener('click',function(){
+  calcular();
+  actualizarDisplay();
+});
+
+botonBorrar.addEventListener('click',function(){
+  clear();
+  actualizarDisplay();
 });
