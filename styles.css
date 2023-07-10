@@ -205,6 +205,7 @@ h1 , p{
   }
 
   .calculadora input{
+    font-size: 150%;
     width: 90%; /* Ancho deseado */
     height: 5vh; /* Alto deseado */
   }
