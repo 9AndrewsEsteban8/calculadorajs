@@ -133,30 +133,35 @@ h1{
 }
 
 
-@media(max-width: 800px){
+
+@media screen and (max-width: 800px){
   h1{
-    font-size: 3vh;
+    font-size: 5vh;
   }
-  
   .contenedor_botones{
-    gap: 4vh;
+    gap: 10vh;
+  }
+
+  .calculadora input{
+    height: 3vh; /* Alto deseado */
   }
 }
 
 
-@media(max-width: 1400px){
+@media screen and (max-width: 1200px){
   h1{
     font-size: 5vh;
   }
 
   .calculadora input{
-    height: 6vh; /* Alto deseado */
-  }
-
-  .contenedor_botones{
-    gap: 4vh;
+    height: 8vh; /* Alto deseado */
   }
 }
+
+
+
+
+
 
 
 
