@@ -4,7 +4,12 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-  background-color: rgba(0, 106, 255, 0.884);;
+  background-color: rgba(0, 106, 255, 0.884);
+  border-radius: 5px;
+}
+
+.dark::-webkit-scrollbar-thumb{
+  background-color: rgb(155, 3, 155);
   border-radius: 5px;
 }
 
@@ -20,8 +25,17 @@ body {
   flex-direction: column;
   height: 50vh;
   margin: 10%;
-
 }
+
+.dark{
+  background: url(src/Imagen\ noche.png) no-repeat center;;
+  background-size:cover;
+  min-height: 100vh;
+  height: 50vh;
+  margin: 10%;
+}
+
+
 
 header{
   display: flex;
@@ -32,7 +46,7 @@ header{
 .switch{
   position: relative;
   display: inline-block;
-  width: 90px;
+  width: 100px;
   height: 40px;
   background-color: rgba(0, 106, 255, 0.884);
   border-radius: 40px;
@@ -101,9 +115,17 @@ input[type='checkbox']:checked + .switch{
   cursor: pointer;
 }
 
+.dark .calculadora button{
+  background-color: rgb(155, 3, 155);
+}
+
 .calculadora button:hover{
   background-color: white;
   color: rgba(0, 106, 255, 0.884);;
+}
+
+.dark .calculadora button:hover{
+  color: rgb(155, 3, 155);
 }
 
 .calculadora input{
@@ -123,8 +145,12 @@ h1{
   font-size: 8vh;
 }
 
+.dark h1{
+  color: rgb(155, 3, 155);
+}
+
 .wrap-toggle{
-  font-size: larger;
+  font-size: 5vh;
   font-weight: bold;
   color:rgba(0, 106, 255, 0.884);
   display: flex;
@@ -132,30 +158,8 @@ h1{
   align-items: center;
 }
 
-
-
-@media screen and (max-width: 800px){
-  h1{
-    font-size: 5vh;
-  }
-  .contenedor_botones{
-    gap: 10vh;
-  }
-
-  .calculadora input{
-    height: 3vh; /* Alto deseado */
-  }
-}
-
-
-@media screen and (max-width: 1200px){
-  h1{
-    font-size: 5vh;
-  }
-
-  .calculadora input{
-    height: 8vh; /* Alto deseado */
-  }
+.dark .wrap-toggle{
+  color: rgb(155, 3, 155);
 }
 
 

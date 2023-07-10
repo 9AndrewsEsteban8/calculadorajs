@@ -3,10 +3,16 @@ const botonOpera = document.getElementsByName('data-opera');
 const botonIgual = document.getElementsByName('data-igual')[0];
 const botonBorrar = document.getElementsByName('data-borrar')[0];
 const botonCorregir = document.getElementsByName('data-corregir')[0];
+const btnSwtich = document.getElementById('toggle');
 var result = document.getElementById("resultado");
 var opeActual = '';
 var opeAnterior = '';
 var operacion = undefined;
+
+btnSwtich.addEventListener('click',() =>{
+  document.body.classList.toggle('dark');
+
+});
 
 botonNumeros.forEach(function(boton){
   boton.addEventListener('click',function(){
