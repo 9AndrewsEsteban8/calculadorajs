@@ -185,8 +185,6 @@ h1{
   .dark{
     min-height: 100vh;
     margin: 1%;
-    /* height: 50vh;
-    margin: 10%; */
   }
 
   header{
@@ -213,6 +211,45 @@ h1{
   .contenedor_botones{
     gap: 4vh;
   }
+}
 
+@media screen and (max-width: 320px){
+  body{
+    margin: 5%;
+  }
+
+  .dark{
+    margin: 5%;
+  }
+
+  .calculadora input{
+    font-size: 100%;
+  }
+
+  .calculadora button{
+    font-size: 100%;
+  }
+
+  header{
+    gap: 1%;
+  }
+
+  .switch{
+    width: 50px;
+    height: 20px;
+    border-radius: 40px;
+  }
+  
+  .switch::after{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px ;
+    left: 5px;
+    top: 2px;
+  }
+
+  input[type='checkbox']:checked + .switch::after{
+    transform: translate(20px);
+  }
 }
 
