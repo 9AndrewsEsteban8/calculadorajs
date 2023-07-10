@@ -149,6 +149,12 @@ h1{
   color: rgb(155, 3, 155);
 }
 
+h1 , p{
+  background-color: white;
+  border-radius: 10px;
+  opacity: 70%;
+}
+
 .wrap-toggle{
   font-size: 5vh;
   font-weight: bold;
