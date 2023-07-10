@@ -19,14 +19,14 @@ body {
   align-items: center;
   flex-direction: column;
   height: 50vh;
-  margin: 5%;
+  margin: 10%;
 
 }
 
 header{
   display: flex;
   justify-content: space-around;
-  gap: 100%;
+  gap: 50%;
 }
 
 .switch{
@@ -131,5 +131,33 @@ h1{
   gap: 2%;
   align-items: center;
 }
+
+
+@media(max-width: 800px){
+  h1{
+    font-size: 3vh;
+  }
+  
+  .contenedor_botones{
+    gap: 4vh;
+  }
+}
+
+
+@media(max-width: 1400px){
+  h1{
+    font-size: 5vh;
+  }
+
+  .calculadora input{
+    height: 6vh; /* Alto deseado */
+  }
+
+  .contenedor_botones{
+    gap: 4vh;
+  }
+}
+
+
 
 
