@@ -16,7 +16,7 @@ btnSwtich.addEventListener('click',() =>{
 
 botonNumeros.forEach(function(boton){
   boton.addEventListener('click',function(){
-    agregarNumero(boton.innerText);
+      agregarNumero(boton.innerText);   
   });
 });
 
@@ -29,6 +29,7 @@ botonOpera.forEach(function(boton){
 botonIgual.addEventListener('click',function(){
   calcular();
   actualizarDisplay();
+  clear();
 });
 
 botonBorrar.addEventListener('click',function(){
